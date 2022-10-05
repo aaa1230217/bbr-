@@ -56,26 +56,26 @@ net.core.netdev_max_backlog = 32768
 net.ipv4.tcp_timestamps = 0
 net.ipv4.tcp_max_orphans = 32768
 # forward ipv4
-net.ipv4.conf.all.route_localnet=1
+net.ipv4.conf.all.route_localnet= 1
 net.ipv4.ip_forward = 1
-net.ipv4.tcp_no_metrics_save=1
-net.ipv4.tcp_ecn=0
-net.ipv4.tcp_frto=0
-net.ipv4.tcp_mtu_probing=0
-net.ipv4.tcp_rfc1337=0
-net.ipv4.tcp_sack=1
-net.ipv4.tcp_fack=1
-net.ipv4.tcp_window_scaling=1
-net.ipv4.tcp_adv_win_scale=1
-net.ipv4.tcp_moderate_rcvbuf=1
-net.core.rmem_max=67108864
-net.core.wmem_max=67108864
-net.ipv4.tcp_rmem=4096 524288 67108864
-net.ipv4.tcp_wmem=4096 524288 67108864
-net.ipv4.udp_rmem_min=8192
-net.ipv4.udp_wmem_min=8192
-net.core.default_qdisc=fq
-net.ipv4.tcp_congestion_control=bbr
+net.ipv4.tcp_no_metrics_save= 1
+net.ipv4.tcp_ecn= 0
+net.ipv4.tcp_frto= 0
+net.ipv4.tcp_mtu_probing= 0
+net.ipv4.tcp_rfc1337= 0
+net.ipv4.tcp_sack= 1
+net.ipv4.tcp_fack= 1
+net.ipv4.tcp_window_scaling= 1
+net.ipv4.tcp_adv_win_scale= 1
+net.ipv4.tcp_moderate_rcvbuf= 1
+net.core.rmem_max= 67108864
+net.core.wmem_max= 67108864
+net.ipv4.tcp_rmem= 4096 524288 67108864
+net.ipv4.tcp_wmem= 4096 524288 67108864
+net.ipv4.udp_rmem_min= 8192
+net.ipv4.udp_wmem_min= 8192
+net.core.default_qdisc= fq
+net.ipv4.tcp_congestion_control= bbr
 EOF
 sysctl -p && sysctl --system
 }
